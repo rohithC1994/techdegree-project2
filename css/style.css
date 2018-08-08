@@ -1,0 +1,416 @@
+
+/* =====================================
+* # Main styles
+*
+* -------------------------------------- */
+
+/* -----------------------------------
+* ## Basic
+* ------------------------------------  */
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  width: 100%;
+  background-color: #011a27;
+  color: #fed36e;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.25;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fed36e;
+  font-family: 'Russo one', sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+/* -----------------------------------
+* ## Header
+* ------------------------------------  */
+
+header {
+  font-family: 'Russo one', sans-serif;
+}
+
+header h1{
+  text-align: center;
+  font-size: 1.5em;
+  color: #fed36e;
+  display: block;
+  margin: 0;
+  padding: 30px;
+}
+
+nav{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.nav-menu {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  background-color: #e6df44;
+  border-radius: 5px;
+  font-size: 1em;
+  display: block;
+  padding: 10px 0;
+  margin: 5px 20px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fed36e;
+}
+
+a:hover {
+  font-size: 1.25em;
+  color: firebrick;
+}
+
+/* -----------------------------------
+* ## Wrapper
+* ------------------------------------  */
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.col {
+  margin-bottom: 25px;
+}
+
+/* -----------------------------------
+* ## Home
+* ------------------------------------  */
+
+#home {
+  width: 100%;
+}
+
+.home-content {
+  color: #fed36e;
+}
+
+.profile-pic {
+  width: 80%;
+  margin: 40px 10% 10px 10%;
+}
+
+/* -----------------------------------
+* ## Portfolio
+* ------------------------------------  */
+
+#portfolio {
+  background-color: #fed36e;
+  color: #011a27;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#portfolio h2 {
+  color: #011a27;
+  font-size: 1em;
+  margin: 0;
+  padding: 50px;
+}
+
+#portfolio h3 {
+  color: #011a27;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.portfolio-img {
+  width: 100%;
+}
+
+/* -----------------------------------
+* ## Skills
+* ------------------------------------  */
+
+#skills {
+  background-color: #fed36e;
+  color: #011a27;
+  width: 100%;
+  margin-top: 1px;
+  padding: 0;
+}
+
+#skills h2 {
+  color: #011a27;
+  font-size: 16px;
+  margin: 0;
+  padding: 50px;
+}
+
+#skills h3 {
+  color: #011a27;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.skills-img {
+  width: 40%;
+  margin: auto 30%;
+}
+
+.skills-img:hover {
+  width: 50%;
+  margin: auto 25%;
+}
+
+/* -----------------------------------
+* ## Contact
+* ------------------------------------  */
+
+#contact h2 {
+  font-size: 16px;
+  margin: 0;
+  padding: 50px;
+}
+
+.contact-content {
+	margin: 0;
+}
+
+.info {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+/* -----------------------------------
+* ## Footer
+* ------------------------------------  */
+
+.footer {
+  font-family: 'Russo one', sans-serif;
+  border-top: 1px solid #fed36e;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.footer-one {
+  float: left
+}
+
+.footer-two {
+  float: right;
+}
+
+.foot-nav {
+  display: none;
+}
+
+/* -----------------------------------
+* ## clearfix
+* ------------------------------------  */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* =====================================
+* # Media Queries
+*
+* -------------------------------------- */
+
+/* -----------------------------------
+* ## Tablets
+* ------------------------------------  */
+
+@media (min-width: 768px) {
+
+  /* -----------------------------------
+  * ### Header
+  * ------------------------------------ */ 
+
+  .nav-menu li {
+    background-color: transparent;
+    display: inline-block;
+  }
+
+  /* -----------------------------------
+  * ### Wrapper
+  * ------------------------------------ */
+
+  .container {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+  }
+
+  .col {
+    width: 50%;
+    float: left;
+    padding: 20px;
+  }
+
+  /* -----------------------------------
+  * ### Home
+  * ------------------------------------ */
+
+  .home {
+    width: 100%;
+  }
+
+  .home-content {
+    font-size: 1em;
+    width: 60%;
+    margin: 0;
+    padding-right: 20px;
+    text-align: left;    
+  }
+
+  .profile-pic {
+    width: 40%;
+    margin: 0;
+    float: right;
+  }
+
+  /* -----------------------------------
+  * ### Contact
+  * ------------------------------------ */
+
+  .contact-content {
+    font-size: 1.25em;
+	width: 80%;
+	margin: auto 10%;
+	
+  }
+
+  /* -----------------------------------
+  * ### Footer
+  * ------------------------------------ */
+
+  footer h4 {
+    float: left;
+    margin: 0px;
+    padding: 25px 0;
+  }
+
+  .footer-two {
+    display: none;
+  }
+
+  .foot-nav {
+    float: right;
+    display: block;
+  }
+
+  .foot-nav-menu {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .foot-nav-menu li{
+    display: inline-block;
+    padding: 5px;
+  }
+
+}
+
+/* -----------------------------------
+* ## Desktop
+* ------------------------------------ */ 
+
+@media (min-width: 1024px) {
+
+  /* -----------------------------------
+  * ### Header
+  * ------------------------------------ */ 
+
+  header h1{
+    font-size: 2em;
+    float: left;
+    margin: 0;
+    padding: 40px 40px 10px 40px;
+  }
+  
+  nav{
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu {
+    padding: 30px 30px 0px 30px;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    font-size: 1em;
+    padding: 10px 0;
+    margin: 5px 20px;
+  }
+
+  /* -----------------------------------
+  * ### Wrapper
+  * ------------------------------------ */
+
+  .container {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+  }
+
+  .col {
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+    margin: auto;
+  }
+
+  /* -----------------------------------
+  * ### Home
+  * ------------------------------------ */
+
+  .home-content {
+	font-size: 1.25em;
+    width: 60%;
+    margin: 0;
+    text-align: left;    
+  }
+
+  .profile-pic {
+    width: 40%;
+    padding: 0 20px 20px;;
+    margin: 0;
+    float: right;
+  }
+	
+/* -----------------------------------
+  * ### Contact
+  * ------------------------------------ */
+
+  .contact-content {
+    font-size: 1.25em;
+	width: 60%;
+	margin: auto 20%;
+	
+  }
+}
